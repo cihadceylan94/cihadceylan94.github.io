@@ -1,8 +1,24 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+@@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+:root {
+  height: 100%;
+  display: flex;
+
+  --bg-color: #f9f9f9;
+  --card-bg-color: #efeeee;
+  --color-primary: #4a4a4a;
+  --color-secondary: #505050;
+
+  &[data-theme="dark"] {
+    --bg-color: #383838;
+    --card-bg-color: #2d2d2d;
+    --color-primary: #f5ecec;
+    --color-secondary: #bfbfbf;
+  }
+}
 body {
 	font-family: 'Open Sans' , sans-serif;
 	font-size: 16px;
-  background: #d0d0d0;
+  background: var(--bg-color);
   text-align: center;
 }
 .switch-checkbox {
@@ -88,7 +104,6 @@ body {
  .nav-item-son {
   color: rgb(49, 71, 83);
   padding-top: 30px;
-  padding-left: 240px;
   padding-right: 30px;
   text-decoration: none;
   transition: .3s;
@@ -116,7 +131,7 @@ body {
 
 .container .box {
   color: #929796;
-  background: rgba(200, 200, 200, 0.5);
+  background: var(--card-bg-color);
   padding: 20px;
   display: grid;
   font-size: 20px;
