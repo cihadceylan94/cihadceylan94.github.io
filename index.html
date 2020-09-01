@@ -5,26 +5,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <script>
-    
+  function changeTheme() {
+  let themeVal = document.querySelector('input[name="switch"]').checked ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', themeVal);
+}
 </script>
-
 <body>  
     <header> 
       <h1>Cihad CEYLAN</h1>
     </header>
     <div class="grid-container">
-        <div class="navbar">
+        <div>
             <nav class="nav_links">
                 <a href="index.html" class="nav-item" >Ana Sayfa</a>
                 <a href="#" class="nav-item" >Makalelerim</a>
                 <a href="#" class="nav-item" >Hobilerim</a>
                 <a href="about.html" class="nav-item" >Hakkımda</a>
                 <a href="#" class="nav-item-son" >
-                  <input type="checkbox" id="switch" class="switch-checkbox" />
-                  <label for="switch" class="switch">
-
-                  </label>
-                </a>
+                <form onchange="changeTheme()"></form>
+                <input type="checkbox" id="switch" class="switch-checkbox" />
+                <label for="switch" class="switch">
+                </label>
+              </form>              
+              </a>
             </nav>
         </div>
         <div class="container">
