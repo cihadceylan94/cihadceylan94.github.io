@@ -3,14 +3,7 @@
 <head>
     <title> 'deneme' </title>
     <link rel="stylesheet" href="style.css">
-<script>
-  function changeTheme() {
-  let themeVal = document.querySelector('input[name="switch"]').checked ? 'dark' : 'light';
-  document.documentElement.setAttribute('data-theme', themeVal);
-}
-</script>
 </head>
-
 <body>  
     <header> 
       <h1>Cihad CEYLAN</h1>
@@ -23,11 +16,10 @@
                 <a href="#" class="nav-item" >Hobilerim</a>
                 <a href="about.html" class="nav-item" >Hakkımda</a>
                 <a href="#" class="nav-item-son" >
-                <form onchange="changeTheme()"></form>
-                <input type="checkbox" id="switch" class="switch-checkbox" />
-                <label for="switch" class="switch">
-                </label>
-              </form>              
+                  <input type="checkbox" class="switch-checkbox" id="swc" />
+                  <label class="swc" for="swc">
+                  </label>
+                </label>            
               </a>
             </nav>
         </div>
@@ -76,5 +68,11 @@
             </div>
           </div>
           <footer>Cihad CEYLAN'ın kişisel Web Sayfasıdır. 2020</footer>
+  <script>
+    const swc = document.getElementById('swc');
+swc.addEventListener('change', () => {
+	document.body.classList.toggle('dark-mode');
+});
+  </script>
 </body>
 </html>
