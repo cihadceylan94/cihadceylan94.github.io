@@ -4,37 +4,39 @@
     <title> 'deneme' </title>
     <link rel="stylesheet" href="style.css">
 </head>
-<script>
-    
-</script>
-
 <body>  
     <header> 
       <h1>Cihad CEYLAN</h1>
     </header>
     <div class="grid-container">
-        <div class="navbar">
+        <div>
             <nav class="nav_links">
-                <a href="index.html" class="nav-item" >Ana Sayfa</a>
-                <a href="#" class="nav-item" >Makalelerim</a>
-                <a href="#" class="nav-item" >Hobilerim</a>
-                <a href="about.html" class="nav-item" >Hakkımda</a>
+              <a href="index.html" class="nav-item" >Ana Sayfa</a>
+              <a href="blog.html" class="nav-item" >Makalelerim</a>
+              <a href="hoby.html" class="nav-item" >Hobilerim</a>
+              <a href="about.html" class="nav-item" >Hakkımda</a>
                 <a href="#" class="nav-item-son" >
-                  <input type="checkbox" id="switch" class="switch-checkbox" />
-                  <label for="switch" class="switch">
-
+                  <input type="checkbox" class="switch-checkbox" id="swc" />
+                  <label class="swc" for="swc">
                   </label>
-                </a>
+                </label>            
+              </a>
             </nav>
         </div>
         <div class="container">
             <div class="box">
               <div class="content">
-                <img src="https://image.flaticon.com/icons/svg/2377/2377010.svg" alt="">
-                <p>Wash hands with soap and water after touching animals and animal products.</p>
+                <img src="forum.svg" alt="">
+                <p>Ben Cihad CEYLAN. </p>
               </div>
             </div>
           </div>
           <footer>Cihad CEYLAN'ın kişisel Web Sayfasıdır. 2020</footer>
+  <script>
+    const swc = document.getElementById('swc');
+swc.addEventListener('change', () => {
+	document.body.classList.toggle('dark-mode');
+});
+  </script>
 </body>
 </html>
