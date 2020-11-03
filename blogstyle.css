@@ -1,0 +1,219 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+body {
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 16px;
+  transition: background 0.2s linear;
+  text-align: center;
+  background-color: rgba(159, 162, 177, .8);
+  color: black;
+}
+body.dark-mode {
+  background: #383838;
+  color:white;;
+}
+.switch-checkbox {
+  display: none;
+  ;
+}
+.swc {
+  width: 38px;
+  height: 21px;
+  display: inline-block;
+  position: relative;
+  border: 2px solid #e5e5e5;
+  border-radius: 15px;
+  background: #e5e5e5;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-right: 15px;
+  
+}
+.swc:before {
+  content: '';
+  width: 38px;
+  height: 21px;
+  background: #fff;
+  display: inline-block;
+  border-radius: 15px;
+  transform: scale(1);
+  transition: 0.4s;
+}
+.swc:after {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+.switch-checkbox:checked + .swc {
+  background: #54d86c;
+  border-color: #54d86c;
+}
+.switch-checkbox:checked + .swc:before {
+  transform: scale(0);
+  transition: 0s;
+}
+.switch-checkbox:checked + .swc:after {
+  left: calc(100% - 21px);
+}
+.grid-container {
+  text-align: center;
+}
+.nav_links {
+  display: inline-flex;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  max-width: 100%;
+  background-color: rgba(215, 225, 226, 0.705);
+  border-radius: 40px;
+  box-shadow: 8px 32px 48px 0 rgba(0, 0, 0, 0.438);
+}
+.nav-item {
+   color: rgb(12, 16, 19);
+   padding: 25px;
+   text-decoration: none;
+   transition: .3s;
+   margin: 0 14px;
+   z-index: 5;
+   font-family: 'DM Sans' , sans-serif;
+   font-size: 18px;
+   position: relative;
+ }
+ .nav-item-son {
+  color: rgb(49, 71, 83);
+  padding-top: 22px;
+  padding-right: 25px;
+  text-decoration: none;
+  transition: .3s;
+  margin: 0 16px;
+  z-index: 1;
+  font-family: 'DM Sans' , sans-serif;
+  font-size: 16px;
+  position: sticky;
+}
+.nav-item:not(.is-active):hover { color: rgba(34, 189, 73, 0.959); }
+.nav-item-son:not(.is-active):hover { color: rgba(34, 189, 73, 0.959); }
+.vitrin {
+  display: block;
+  padding-top: 40px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.vitrin .prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 16%;
+  width: auto;
+  padding: 16px;
+  color: #888;
+  font-size: 80px;
+  border-color: transparent;
+  background-color: transparent;
+
+  }
+.vitrin .next {
+  cursor: pointer;
+  position: absolute;
+  right: 16%;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: #888;
+  font-size: 80px;
+  border-color: transparent;
+  background-color: transparent;
+  
+}
+
+.container {
+  position: relative;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: minmax(100px, auto);
+  margin-top: 40px;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 40px;
+  grid-auto-flow: dense;
+  grid-gap: 10px;
+}
+.container .box {
+  padding: 20px;
+  display: grid;
+  font-size: 20px;
+  place-items: center;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.5s;
+  box-shadow: 8px 32px 48px 0 rgba(0, 0, 0, 0.438);
+}
+
+.container .box:hover {
+  box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
+}
+
+.container .box img {
+  position: relative;
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.container .box:nth-child(n) {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+
+@media (max-width: 1280px) {
+
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    grid-template-rows: minmax(auto, auto);
+    margin:0 auto;
+
+  }
+  .container .box {
+    grid-column: unset !important;
+    grid-row: unset !important;
+  }
+  .vitrin .prev {
+    cursor: pointer;
+    position: relative;
+    top: unset;
+    left: unset;
+    right: unset;
+    width: auto;
+    padding: unset;
+    font-size: unset;
+    
+  }
+  .vitrin .next {
+    cursor: pointer;
+    position: relative;
+    top: unset;
+    right: unset;
+    width: auto;
+    padding: unset;
+    font-size: unset;
+    
+  }
+}
+@media (max-width: 740px) {
+  .nav-item {
+    padding: 18px;
+    margin: 0 2px;
+    font-size: 15px;
+  }
+  .nav-item-son {
+    margin: 0 1px;
+    padding-top: 15px;
+  }
+}

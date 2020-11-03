@@ -1,0 +1,344 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+body {
+	font-family: 'Open Sans' , sans-serif;
+	font-size: 16px;
+  transition: background 0.2s linear;
+  text-align: center;
+  background: rgba(159, 162, 177, .8);
+  color:black;
+}
+body.dark-mode {
+  background-color: #383838;
+  color: white;
+}
+.switch-checkbox {
+  display: none;
+  ;
+}
+.swc {
+  width: 38px;
+  height: 21px;
+  display: inline-block;
+  position: relative;
+  border: 2px solid #e5e5e5;
+  border-radius: 15px;
+  background: #e5e5e5;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-right: 15px;
+  
+}
+.swc:before {
+  content: '';
+  width: 38px;
+  height: 21px;
+  background: #fff;
+  display: inline-block;
+  border-radius: 15px;
+  transform: scale(1);
+  transition: 0.4s;
+}
+.swc:after {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+.switch-checkbox:checked + .swc {
+  background: #54d86c;
+  border-color: #54d86c;
+}
+.switch-checkbox:checked + .swc:before {
+  transform: scale(0);
+  transition: 0s;
+}
+.switch-checkbox:checked + .swc:after {
+  left: calc(100% - 21px);
+}
+.grid-container {
+  text-align: center;
+}
+.nav_links {
+  display: inline-flex;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  max-width: 100%;
+  background-color: rgba(215, 225, 226, 0.705);
+  border-radius: 40px;
+  box-shadow: 8px 32px 48px 0 rgba(0, 0, 0, 0.438);
+}
+.nav-item {
+   color: rgb(12, 16, 19);
+   padding: 25px;
+   text-decoration: none;
+   transition: .3s;
+   margin: 0 14px;
+   z-index: 5;
+   font-family: 'DM Sans' , sans-serif;
+   font-size: 18px;
+   position: relative;
+ }
+ .nav-item-son {
+  color: rgb(49, 71, 83);
+  padding-top: 22px;
+  padding-right: 25px;
+  text-decoration: none;
+  transition: .3s;
+  margin: 0 16px;
+  z-index: 1;
+  font-family: 'DM Sans' , sans-serif;
+  font-size: 16px;
+  position: sticky;
+}
+.nav-item:not(.is-active):hover { color: rgba(34, 189, 73, 0.959); }
+.nav-item-son:not(.is-active):hover { color: rgba(34, 189, 73, 0.959); }
+
+.resepsiyon {
+  padding-top: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom:40px ;
+}
+.resimler {
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: minmax(100px, auto);
+  margin-top: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 15px;
+  grid-auto-flow: dense;
+  grid-gap: 20px;
+}
+.container .about {
+  padding: 10px;
+  display: grid;
+  font-size: 20px;
+  place-items: center;
+  text-align: left;
+  /*box-shadow: 8px 32px 48px 0 rgba(0, 0, 0, 0.438);*/
+  
+}
+.container .about img {
+  position: relative;
+  max-width: 640px;
+}
+
+.container .about:nth-child(1n) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.container .about:nth-child(2n) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/*buradan sonra yetenek çubukları olacak*/
+.yetenek {
+  position: relative;
+  border-radius: 10px;
+}
+
+.yetenek h2 {
+  margin-bottom: 30px;
+}
+.yetenek img {
+  float: left;
+}
+
+.yetenek .skill {
+  margin-top: 15px;
+  margin-bottom: 35px;
+  position: relative;
+  overflow-x: hidden;
+  padding-left: 15px;
+}
+
+.yetenek .skill::before {
+  content: "";
+  width: 100%;
+  height: 10px;
+  display: block;
+  position: absolute;
+  background-color: #959595;
+  bottom: 0;
+  border-radius: 10px;
+}
+
+.yetenek .skill .skill-bar:hover::before {
+  height: 100%;
+}
+
+.yetenek .skill p {
+  font-size: 18px;
+  font-weight: 700;
+
+  margin: 0;
+}
+
+.yetenek .skill .skill-bar {
+  width: 100%;
+  height: 10px;
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  animation: animated 1s both;
+}
+
+.yetenek .skill .skill-bar.skill1 {
+  background-image: linear-gradient(109.6deg, rgba(156, 252, 248, 1) 11.2%, rgba(110, 123, 251, 1) 91.1%);
+  width: 99%;
+}
+
+.yetenek .skill .skill-bar.skill2 {
+  background-image: linear-gradient(109.6deg, rgba(253, 199, 141, 1) 11.3%, rgba(249, 143, 253, 1) 100.2%);
+  width: 99%;
+}
+
+.yetenek .skill .skill-bar.skill3 {
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(253, 193, 104, 1) 0%, rgba(251, 128, 128, 1) 90%);
+  width: 99%;
+}
+
+.yetenek .skill .skill-bar.skill4 {
+  background-image: linear-gradient(109.6deg, rgba(218, 185, 252, 1) 11.2%, rgba(125, 89, 252, 1) 91.1%);
+  width: 70%;
+}
+
+.yetenek .skill .skill-bar.skill5 {
+  background: linear-gradient(25deg, #d64c7f, #cc24b0 50%);
+  width: 85%;
+}
+.yetenek .skill .skill-bar.skill6 {
+  background: linear-gradient(25deg, #956b7b, #6408ce 50%);
+  width: 80%;
+}
+.yetenek .skill .skill-bar.skill7 {
+  background: linear-gradient(25deg, #4c9fd6, #3fcc4b 50%);
+  width: 99%;
+}
+
+.yetenek .skill .skill-bar span {
+  position: absolute;
+  border-top: 5px solid #f4392f;
+  top: -30px;
+  padding: 3px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.yetenek .skill .skill-bar.skill1 span.skill-count,
+.yetenek .skill .skill-bar.skill2 span.skill-count,
+.yetenek .skill .skill-bar.skill3 span.skill-count,
+.yetenek .skill .skill-bar.skill4 span.skill-count,
+.yetenek .skill .skill-bar.skill5 span.skill-count,
+.yetenek .skill .skill-bar.skill6 span.skill-count,
+.yetenek .skill .skill-bar.skill7 span.skill-count
+{
+  right: 0;
+}
+
+@keyframes animated {
+  from {
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+  }
+
+  to {
+      transform: matrix3d(0, 0, 0);
+  }
+}
+/*yetenek çunukları bitti deneyim kartları buradan sonra*/
+
+.deneyim {
+  background-image: url(arka.jpg);
+  position: relative;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: minmax(100px, auto);
+  margin-top:30px;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  padding-left: 10%;
+  padding-right: 10%;
+  grid-auto-flow: dense;
+  grid-gap: 40px;
+}
+
+.deneyim .kutu {
+  backdrop-filter: blur(6px);
+  color: lavenderblush;
+  padding: 40px;
+  display: grid;
+  font-size: 20px;
+  place-items: center;
+  text-align: center;
+  border-radius: 15px;
+  transition: 0.5s;
+  box-shadow: 8px 32px 48px 0 rgba(0, 0, 0, 0.561),
+              8px 32px 48px 0 rgba(0, 0, 0, 0.561);
+}
+
+.deneyim .kutu:hover {
+  box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
+}
+
+.deneyim .kutu img {
+  position: relative;
+  max-height: 100px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.deneyim .kutu:nth-child(n) {
+  grid-column: span 1;
+  grid-row: span 3;
+}
+
+
+
+@media (max-width: 1080px) {
+
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+    grid-template-rows: minmax(auto, auto);
+    margin:0 auto;
+
+  }
+  .container .box {
+    grid-column: unset !important;
+    grid-row: unset !important;
+  }
+  .resepsiyon {
+    padding-top: 40px;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom:40px ;
+  }
+
+}
+@media (max-width: 740px) {
+  .nav-item {
+    padding: 18px;
+    margin: 0 2px;
+    font-size: 15px;
+  }
+  .nav-item-son {
+    margin: 0 1px;
+    padding-top: 15px;
+  }
+  
+}
