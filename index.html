@@ -1,30 +1,30 @@
 <!doctype html>
 <html lang="tr-TR">
 <head>
-    <title> Cihad CEYLAN </title>
+    <title> 'deneme' </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>  
     <header> 
-      <h1>Cihad CEYLAN</h1>
+      <div class="resepsiyon">
+        <img src="ekran.jpg" style="width: 100%; border-radius: 15px;">
+      </div>
     </header>
+
     <div class="grid-container">
+        
         <div>
             <nav class="nav_links">
                 <a href="index.html" class="nav-item" >Ana Sayfa</a>
-                <a href="blog.html" class="nav-item" >Makalelerim</a>
+                <a href="blog.html" class="nav-item" >Blog</a>
                 <a href="hoby.html" class="nav-item" >Hobilerim</a>
-                <a href="about.html" class="nav-item" >Hakkımda</a>
-                <a href="#" class="nav-item-son" >
-                  <input type="checkbox" class="switch-checkbox" id="swc" />
-                  <label class="swc" for="swc">
-                  </label>
-                </label>            
-              </a>
+                <a href="about.html" class="nav-item" style="font-size: 19px;">Hakkımda</a>
+                <a href="#" class="nav-item-son" ><input type="checkbox" class="switch-checkbox" id="swc" />
+                <label class="swc" for="swc"></label></a>
             </nav>
-        </div>
-      <div class="container">
+         </div>
+        <div class="container">
             <div class="box">
               <div class="content">
                 <img src=code.svg alt="">
@@ -35,6 +35,7 @@
               <div class="content">
                 <img src="forum.svg" alt="">
                 <p>Ben Cihad CEYLAN. 19 Mayıs 1994'de doğdum ve Mersin'in Anamur ilçesinde büyüdüm. Anamur Anadolu Lisesini bitirdikten sonra Mersin Üniversitesi Makine Mühendisliğini bitirdim. 2020 Şubatının son günlerinde de Şırnak'ta yapmış olduğum askerlik görevimi bitirdim.</p>
+                
               </div>
             </div>
             <div class="box">
@@ -45,20 +46,14 @@
             </div>
             <div class="box">
               <div class="content">
-                <img src="" alt="">
-                <p></p>
+                <img src="sofware.svg" alt="">
+                <p>Burada çizdiğim bazı CAD dosyalarını bulacaksınız.</p>
               </div>
             </div>
             <div class="box">
               <div class="content">
-                <img src="" alt="">
-                <p></p>
-              </div>
-            </div>
-            <div class="box">
-              <div class="content">
-                <img src="" alt="">
-                <p></p>
+                <img src="function.svg" alt="">
+                <p>Burada sayısal yöntemler ile analizini yaptığım bazı örnekleri bulacaksınız.</p>
               </div>
             </div>
             <div class="box">
@@ -71,9 +66,11 @@
                 </div>
             </div>
           </div>
-      </div>
           
-          <footer>Cihad CEYLAN'ın kişisel Web Sayfasıdır. 2020</footer>
+    </div>
+    
+          
+    <footer>Cihad CEYLAN'ın kişisel Web Sayfasıdır. 2020</footer>
   <script>
     const swc = document.getElementById('swc');
 swc.addEventListener('change', () => {
