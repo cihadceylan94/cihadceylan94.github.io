@@ -2,10 +2,10 @@
 body {
 	font-family: 'Open Sans' , sans-serif;
 	font-size: 16px;
-  background: rgba(159, 162, 177, .8);
   transition: background 0.2s linear;
   text-align: center;
-  color:black;
+  background-color: rgba(159, 162, 177, .8);
+  color: black;
 }
 body.dark-mode {
   background-color: #383838;
@@ -99,13 +99,20 @@ body.dark-mode {
 }
 .nav-item:not(.is-active):hover { color: rgba(34, 189, 73, 0.959); }
 .nav-item-son:not(.is-active):hover { color: rgba(34, 189, 73, 0.959); }
+.resepsiyon {
+  padding-top: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom:40px ;
+}
+
 .container {
   position: relative;
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-template-rows: minmax(100px, auto);
-  margin-top: 40px;
+  grid-template-rows: minmax(100px, 1fr);
+  margin-top: 0px;
   margin-left: 15%;
   margin-right: 15%;
   padding: 40px;
@@ -118,7 +125,7 @@ body.dark-mode {
   font-size: 20px;
   place-items: center;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 20px;
   transition: 0.5s;
   box-shadow: 8px 32px 48px 0 rgba(0, 0, 0, 0.438);
 }
@@ -146,6 +153,8 @@ body.dark-mode {
   grid-column: span 2;
   grid-row: span 1;
 }
+
+
 
 .fa {
   padding: 20px;
@@ -195,5 +204,22 @@ body.dark-mode {
   .container .box {
     grid-column: unset !important;
     grid-row: unset !important;
+  }
+  .resepsiyon {
+    padding-top: 40px;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom:40px ;
+  }
+}
+@media (max-width: 740px) {
+  .nav-item {
+    padding: 18px;
+    margin: 0 2px;
+    font-size: 15px;
+  }
+  .nav-item-son {
+    margin: 0 1px;
+    padding-top: 15px;
   }
 }
