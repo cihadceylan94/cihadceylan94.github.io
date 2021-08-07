@@ -135,12 +135,6 @@ body.dark-mode {
   box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
 }
 
-.container .box a:link {
-   color: tomato;
-}
-
-
-
 .container .box img {
   position: relative;
   max-width: 100px;
