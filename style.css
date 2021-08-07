@@ -128,11 +128,18 @@ body.dark-mode {
   border-radius: 20px;
   transition: 0.5s;
   box-shadow: 8px 32px 48px 0 rgba(0, 0, 0, 0.438);
+  
 }
 
 .container .box:hover {
   box-shadow: 0 16px 24px 0 rgba(0,0,0,0.2);
 }
+
+.container .box a:link {
+   color: tomato;
+}
+
+
 
 .container .box img {
   position: relative;
