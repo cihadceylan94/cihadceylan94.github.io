@@ -167,7 +167,7 @@ body.dark-mode {
 }
 
 .container .box:nth-child(n) {
-  grid-column: span 1;
+  grid-column: span 2;
   grid-row: span 2;
 }
 
