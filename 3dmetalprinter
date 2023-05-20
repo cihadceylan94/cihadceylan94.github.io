@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title> Bu siteyi neden kurdum? </title>
+        <link rel="stylesheet" href="contentstyle.css">
+    </head>
+    <body>
+        <div>
+            <nav class="nav_links">
+                <a href="index.html" class="nav-item" >Ana Sayfa</a>
+                <a href="blog.html" class="nav-item" >Blog</a>
+                <a href="hoby.html" class="nav-item" >Hobilerim</a>
+                <a href="about.html" class="nav-item">Hakkımda</a>
+                <a href="#" class="nav-item-son" ><input type="checkbox" class="switch-checkbox" id="swc" />
+                <label class="swc" for="swc"></label></a>
+            </nav>
+         </div>
+         <div class="box">
+         <div class="content">
+            <img src="SLM.jpg" class="imgg"> 
+            <h1>Nedir Bu Karanlık Fabrika</h1>
+             <p>
+                &nbsp  20. yüzyılın sonlarında geliştirilmeye başlanan 3 Boyutlu Metal Yazdırma teknolojisi(Selective Laser Melting-SLM), daha önce polimerleri 3 boyutlu yazdırabilmek için geliştirilen teknoloji ile benzerlik gösterir. Bu günlerde yaygın olarak FDM(Fused Deposition Modeling) tekniği ile filamentleri ergiterek birbiri üzerine biriktirme yapan 3 boyutlu yazıcılar kendini gösteriyor. Aslında ilk 3 boyutlu yazıcı SLS(selective Laser Sintering) adı verilen bir teknik ile polimer tozlarının ince katmanlar halinde serilerek lazer ile modelin detaylarının birbirine kaynaştırılması yöntemiyle yapılıyordu. 
+             </p>
+             <img src="sls.gif" class="imgg"> 
+             <p>
+              &nbsp SLM teknolojisinde metal tozu eriyeceği için, SLS teknolojisi ile gösterdiği bazı farklılıklar vardır. SLM teknolojisinde ortama argon veya nitrojen gibi inert(kimyasal olarak tepkime göstermeyen) gazlar pompalanarak koruyucu bir atmosfer oluşturulur.  Ortamın sıcaklığı yüksektir ve parçalar çıkarılmadan önce gereken soğuma süresine dikkat edilmesi gerekir.
+              </p>
+              <h2>SLM Teknolojisi Nasıl Çalışır?</h2>
+              <p>
+              &nbsp Metal tozları şekilde gösterildiği gibi üretim yapılan tabla üzerinde 35-50 µm kalınlığında bir katman oluşturur. Lazer ince toz katmanın üzerinde modelin kesit alanını tarayarak metalin birbirine kaynaşmasını sağlar. Daha sonra üzerine yeni bir katman toz atılarak işlemler model bitene kadar devam eder.
+              </p>
+              <img src="2020sls.gif" class="imgg"> 
+              <p>
+              &nbsp 3 Boyutlu Metal Yazıcılarda parçalar homojen ve neredeyse gözeneksiz bir doku oluşturduğu için geleneksel yöntemlerle üretilmiş parçalara benzerlik gösterir. SLM yazıcılarda 1.4404 Paslanmaz Çelik(316L), Alüminyum (AlSi10Mg) ve Titanyum(Ti6Al4V) malzemeleri kullanılır.
+              </p>
+              <img src="slsgiphy.gif" class="imgg"> 
+              <p>
+              &nbsp SLM  3D baskı teknolojisinde, geleneksel yöntemlerle üretilen metal parçalar ile mekanik olarak rekabet edebilen parçalar oluşturur. Bu teknolojinin geldiği son noktada hem prototiplemede hem de seri üretimde kendini göstererek endüstrinin bir çok alanında yer bulmuştur. Havacılık, Diş hekimliği, Tıbbi implantlar, Otomotiv bileşenleri ve çeşitli makine parçaları üreten bir çok sektörde SLM yazıcılara rastlayabilirsiniz.
+              </p>
+              <h2>Baskı Maliyetleri</h2>
+              <p>
+              &nbsp SLM yazıcılarda kullanılan malzemeleri son teknoloji olup gelişmiş donanım gerektirir. Bu nedenle yazıcıların hem satın alınması hem de çalıştırılması pahalıdır. Çelik ve Alüminyum için ana maliyet baskı süresi ve üretim sonrası süresinden gelir. Malzeme kullanım miktarı daha az kritiktir. Daha az malzeme basmanın veya birden fazla malzeme basmanın fiyatı genellikle benzerdir.
+              </p>
+              <p>
+              &nbsp Titanyum için hammadde maliyeti, çelik ve alüminyumdan önemli ölçüde yüksektir. Bu nedenle parçanızın ek bir kopyasının maliyete olan etkisi alüminyum ve çeliğe göre daha yüksektir.
+              </p>
+              <p>
+              &nbsp Baskısı alınacak model, destek yapıları gerektirebilir. Bunlar aynı malzemeden yapıldığı için ve parçayla kaynaştığı için modelden ayırmak emek yoğun bir süreç ister. Karmaşık modellerde bu yapıların kaldırılmasıyla ilgili ek maliyetler de çıkabilir.
+              </p>
+              <h2>Metal Baskı Teknolojisinin Çıktıları</h2>
+              <p>
+              &nbsp 3 Boyutlu metal yazdırma ile geleneksel yöntemler ile üretilemeyecek geometrilerin kapısı aralanmış oldu. Bu sayede havacılık ve uzay sektöründe istenen akışı sağlamak için şimdiye kadar üretilemeyen roket motorlarının ve türbinli jet motorların yanma odaları üretilmiş oldu. Bunun dışında topoloji optimizasyonu ile aynı kuvvetlere dayanacak ama daha hafifi modellerin basılması ile ağırlık azaltabilmek mümkün oldu. 3 Boyutlu baskı teknolojilerinin çözebileceği bir çok sorun gelecekte bizi bekliyor olacak.
+              </p>
+
+            
+         </div>
+         <div class="box">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScrXCYyqtVRzXlaSEsvhooY8dYjf-e04ZL1cN_au1ol0-2MwA/viewform?embedded=true" width="640 " height="840" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor…</iframe>
+          </div>
+         </div>
+         <footer>Cihad CEYLAN'ın kişisel Web Sayfasıdır. 2023</footer>
+         <script>
+           const swc = document.getElementById('swc');
+       swc.addEventListener('change', () => {
+           document.body.classList.toggle('dark-mode');
+       });
+         </script>
+    </body>
+</html>
